@@ -19,17 +19,26 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: var(--grayboxbackground);
+}
+.header-nav {
+    background-color: white;
+}
 .nav-bare {
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
     padding-right:30px;
     padding-left: 30px;
+    padding-bottom: 20px;
     align-items: center;
 }
 .logo-container {
     display: flex;
     gap: 25px;
+    align-items: center;
 }
 .logo {
     width: 40px;
@@ -45,10 +54,124 @@
 }
 .nav-bare h1 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
 }
 .nav-bare h2 {
     font-weight: 300;
     font-size: 15px;
     color: var(--graytext);
 }
+main {
+    padding-right:30px;
+    padding-left: 30px;
+}
+.top-dashboard {
+    padding-top: 40px;
+}
+.top-dashboard h2 {
+    font-size: 25px;
+}
+.top-dashboard h3 {
+    padding-top: 15px;
+    font-weight: 300;
+    color: var(--graytext);
+}
+.card-container {
+    margin-top: 40px;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.card-content-box {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-right:30px;
+    padding-left: 30px;
+}
+.card-content-box h2{
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+.card-container h3 {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--graytext);
+}
+
+.form-field input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #D5DADF;
+}
+.form-field select {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #D5DADF;
+}
+.form-field input::placeholder {
+    padding-left: 20px;
+}
+.form-field input:hover {
+    border: 1px solid #252F3E;
+            transition: 0.2s;
+
+}
+.form-field p {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.submit-area {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+.submit-area button {
+    width: 260px;
+    height: 44px;
+    border: none;
+    background-color: var(--darkblue);
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.submit-area button:hover {
+    background-color: #3b4351;
+    transition: 0.5s;
+}
+
+
+
+
+/*
+FORM RESPONSIVE
+
+TABLETTE :
+.deep-content-form {
+    display: grid;
+    padding-top: 40px;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+.desc {
+    grid-column: 1.5 / 4;
+}
+
+IPHONE
+.deep-content-form {
+    display: grid;
+    padding-top: 40px;
+    grid-template-columns: 2fr;
+    gap: 30px;
+}
+.desc {
+     grid-column: 1.5 / 4;
+}
+*/

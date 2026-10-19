@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>HelpDesk</title>
 </head>
 <body>
-    <header>
+    <header class="header-nav">
         <nav class="nav-bare">
             <div class="logo-container">
                 <div class="logo">
@@ -18,5 +19,57 @@
             <h2>Atlas Solutions  /  Support</h2>
         </nav>
     </header>
+
+    <main>
+        <section class="dashboard-container">
+            <div class="top-dashboard">
+                <h2>Gestion des demandes</h2>
+                <h3>Centralisez les incidents et simplifiez le suivi de votre équipe.</h3>
+            </div>
+            <div class="card-container">
+                <div class="card-content-box">
+                    <h2>Créer une demande</h2>
+                    <h3>Décrivez votre problème informatique en quelques étapes.</h3>
+                    <form class="deep-content-form">
+                        
+                        <div class="form-field title-issue">
+                            <p>Titre du problème *</p>
+                            <input type="text" id="issue_title" placeholder="Connexion Wi-Fi instable">
+                        </div>
+
+                        <div class="form-field type">
+                            <p>Catégorie *</p>
+                            <select name="" id="Categorie">
+                                <option value="" disabled selected>Choisir une option</option>
+                                <option value="Réseau">Réseau</option>
+                                <option value="Materiele">Materiel</option>
+                                <option value="Logiciel">Logiciel</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field Priority">
+                            <p>Priorité *</p>
+                            <select name="" id="Priorite">
+                                <option value="" disabled selected>Choisir une option</option>
+                                <option value="Réseau">Basse</option>
+                                <option value="Materiele">Normale</option>
+                                <option value="Logiciel">Haute</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field desc">
+                            <p>Description *</p>
+                            <input type="text" id="description" placeholder="Décrivez le problème informatique rencontré...">
+                        </div>
+                    </form>
+                    <div class="submit-area">
+                        <button id="submit" onclick="get_form_input()">＋  Ajouter la demande</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
+<script src="./js/script.js"></script>
+<script src="./js/utility.js"></script>
