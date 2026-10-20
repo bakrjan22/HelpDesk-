@@ -10,6 +10,7 @@
   --lightgreen: #E8F6EE;
   --lightgreen: #388867;
   --grayboxbackground: #EDF0F4;
+  --darkergrayboxbackground: #ccced1;
   --graytext: #8A95A4;
   --textcolor:#202A38;
   --purplebackground:#F1EAF9;
@@ -136,7 +137,7 @@ main {
     border: none;
     background-color: var(--darkblue);
     color: white;
-    font-size: 13px;
+    font-size: 17px;
     border-radius: 10px;
     margin-left: auto;
     margin-bottom: 30px;
@@ -146,9 +147,143 @@ main {
     background-color: #3b4351;
     transition: 0.5s;
 }
+.demandes-top-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+.list-demandes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.list-demandes h2 {
+    font-size: 20px;
+}
+.demandes-top-area h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20Px;
+    background-color: var(--darkergrayboxbackground);
+    color: var(--graytext);
+    font-weight: 400;
+    font-size: 13px;
+    
+}
+.demande-top-right-content {
+    background-color: var(--darkergrayboxbackground);
+    padding: 4px;
+    border-radius: 10px;
+}
+.demande-top-right-content-button button {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.demande-top-right-content-button div {
+    display: flex;
+    margin-right: 10px;
+    gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+}
+.demande-top-right-content-button button .fa-solid {
+    transition: all 0.2s ease;
+}
+.demande-top-right-content-button button:hover .fa-solid {
+    transition: all 0.2s ease;
 
+    scale: 1.1;
+    transform: rotate(20deg);
+}
+.wrap-card {
+    border: 1px solid red;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.issue-card {
+    width: 100%;
+    background-color: white;
+}
+.logo-card {
+    background-color: var(--darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px; 
+}
 
+.top-card {
+    display: flex;
+    justify-content:space-between;
+}
+.top-card h4 {
+    color: var(--graytext);
+    font-weight: 500;
+}
+.middle-card {
+    margin-top: 35px;
+}
+.middle-card h3 {
+    color: var(--graytext);
+    font-weight: 400;
+    margin-top: 15px;
+}
+.type-priority {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.type-priority span {
+    border: 1px solid red;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20Px;
+    font-weight: 600;
+}
+.end-card {
+    width: 100%;
+    border-top: 1px solid #ccced1;
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+}
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+.button-container button {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.button-container button i {
+    padding-right: 10px;
+}
+.button-container button .fa-solid {
+    transition: all 0.2s ease;
+}
+.button-container button:hover .fa-solid {
+    transition: all 0.2s ease;
 
+    scale: 1.1;
+    transform: rotate(20deg);
+}
 
 /*
 FORM RESPONSIVE

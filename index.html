@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>HelpDesk</title>
 </head>
 <body>
@@ -39,11 +40,11 @@
 
                         <div class="form-field type">
                             <p>Catégorie *</p>
-                            <select name="" id="Categorie">
+                            <select name="" id="Categorie" class="Categorie-class">
                                 <option value="" disabled selected>Choisir une option</option>
-                                <option value="Réseau">Réseau</option>
-                                <option value="Materiele">Materiel</option>
-                                <option value="Logiciel">Logiciel</option>
+                                <option value="Réseau" class="option-dropdown">Réseau</option>
+                                <option value="Materiele" class="option-dropdown">Materiel</option>
+                                <option value="Logiciel" class="option-dropdown">Logiciel</option>
                             </select>
                         </div>
 
@@ -63,10 +64,71 @@
                         </div>
                     </form>
                     <div class="submit-area">
-                        <button id="submit" onclick="get_form_input()">＋  Ajouter la demande</button>
+                        <button id="submit" onclick="request_issue()">＋  Ajouter la demande</button>
                     </div>
                 </div>
             </div>
+
+            <section class="demandes">
+                <div class="demandes-top-area">
+                    <div class="demandes-top-left" id="demandes-top-left-id">
+                        <div class="list-demandes">
+                            <h2>Liste des demandes</h2>
+                            <h3 id="task-count">0 demandes</h3>
+                        </div>
+                    </div>
+                    <div class="demande-top-right" id="card-or-array">
+                        <div class="demande-top-right-content">
+                            <div class="demande-top-right-content-button">
+                                <button id="card-button" onclick="display_method.toggle_cartes()">
+                                    <div>
+                                        <i class="fa-solid fa-table-cells-large" style="color: rgb(32, 42, 56);"></i>
+                                        Cartes
+                                    </div>
+                                </button>
+                                <button id="tableau-button" onclick="display_method.toggle_tableau()">
+                                    <div>
+                                        <i class="fa-solid fa-grip-vertical shared-style"></i>
+                                        Tableau
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="demandes-display" id="id-demandes-display">
+
+                <!--TO do with js builder-->
+                <div class="issue-card">
+                    <div class="wrap-card">
+                        <div class="top-card">
+                            <div class="logo-card">
+                                <i class="fa-solid fa-wifi" style="color: rgb(250, 251, 252);"></i>
+                            </div>
+                            <h4 id="issue-id">HD-001</h4>
+                        </div>
+                        <div class="middle-card">
+                            <h2 id="issue-title">Connexion Wi-Fi instable</h2>
+                            <h3 id="issue-description">Le réseau se déconnecte régulièrement.</h3>
+                            <div class="type-priority">
+                                <span class="issue-type">Réseau</span>
+                                <span class="priority-type">Réseau</span>
+                            </div>
+                        </div>
+                        <div class="end-card">
+                            <div class="button-container">
+                                <button><i class="fa-solid fa-pen-fancy" style="color: rgb(97, 112, 132);"></i>Modifier</button>
+                                <button><i class="fa-solid fa-eraser" style="color: rgb(204, 98, 106);"></i>Supprimer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
         </section>
     </main>
 </body>
