@@ -276,7 +276,9 @@ function modification() {
         priority:Priority.value,
         description:description.value,
     };
+    button_submit.textContent = "＋  Ajouter la demande";
     error_log(info_submit,"Modifier !","#35e776");
+
 }
 
 function request_issue() {
