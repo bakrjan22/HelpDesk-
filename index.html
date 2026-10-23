@@ -52,9 +52,9 @@
                             <p>Priorité *</p>
                             <select name="" id="Priorite">
                                 <option value="" disabled selected>Choisir une option</option>
-                                <option value="Réseau">Basse</option>
-                                <option value="Materiele">Normale</option>
-                                <option value="Logiciel">Haute</option>
+                                <option value="Basse">Basse</option>
+                                <option value="Normale">Normale</option>
+                                <option value="Haute">Haute</option>
                             </select>
                         </div>
 
@@ -63,6 +63,7 @@
                             <input type="text" id="description" placeholder="Décrivez le problème informatique rencontré...">
                         </div>
                     </form>
+                    <p class="info_submit" id="info_submit"></p>
                     <div class="submit-area">
                         <button id="submit" onclick="request_issue()">＋  Ajouter la demande</button>
                     </div>
@@ -77,8 +78,10 @@
                             <h3 id="task-count">0 demandes</h3>
                         </div>
                     </div>
+                    
                     <div class="demande-top-right" id="card-or-array">
                         <div class="demande-top-right-content">
+                        
                             <div class="demande-top-right-content-button">
                                 <button id="card-button" onclick="display_method.toggle_cartes()">
                                     <div>
@@ -92,22 +95,25 @@
                                         Tableau
                                     </div>
                                 </button>
+                                
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
             <section class="demandes-display" id="id-demandes-display">
 
                 <!--TO do with js builder-->
+                <!--
                 <div class="issue-card">
                     <div class="wrap-card">
                         <div class="top-card">
                             <div class="logo-card">
                                 <i class="fa-solid fa-wifi" style="color: rgb(250, 251, 252);"></i>
                             </div>
-                            <h4 id="issue-id">HD-001</h4>
+                            <h4 id="issue-id" class="issue_id_class">HD-001</h4>
                         </div>
                         <div class="middle-card">
                             <h2 id="issue-title">Connexion Wi-Fi instable</h2>
@@ -125,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-
+                -->
 
             </section>
 

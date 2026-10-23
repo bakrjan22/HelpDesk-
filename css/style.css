@@ -204,7 +204,6 @@ main {
     transform: rotate(20deg);
 }
 .wrap-card {
-    border: 1px solid red;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -213,6 +212,7 @@ main {
 .issue-card {
     width: 100%;
     background-color: white;
+    border-radius: 10px;
 }
 .logo-card {
     background-color: var(--darkblue);
@@ -228,7 +228,7 @@ main {
     display: flex;
     justify-content:space-between;
 }
-.top-card h4 {
+.issue_id_class {
     color: var(--graytext);
     font-weight: 500;
 }
@@ -246,7 +246,6 @@ main {
     margin-top: 30px;
 }
 .type-priority span {
-    border: 1px solid red;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 5px;
@@ -284,7 +283,13 @@ main {
     scale: 1.1;
     transform: rotate(20deg);
 }
-
+.info_submit {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+}
 /*
 FORM RESPONSIVE
 
